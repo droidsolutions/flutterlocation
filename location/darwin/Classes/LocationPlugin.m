@@ -253,7 +253,8 @@
           @"speed": @(location.speed),
           @"speed_accuracy": @0.0,
           @"heading": @(location.course),
-          @"time": @(((double) timeInSeconds) * 1000.0)  // in milliseconds since the epoch
+          @"time": @(((double) timeInSeconds) * 1000.0),  // in milliseconds since the epoch
+          @"floor": @(location.floor.level)
         };
 
     if (self.locationWanted) {
