@@ -59,7 +59,7 @@ class LocationData {
   final double time;
 
   // floor of the building that the user is in (relevant for apple indoor maps)
-  final int floor;
+  final dynamic floor;
 
   @override
   String toString() => 'LocationData<lat: $latitude, long: $longitude>';
