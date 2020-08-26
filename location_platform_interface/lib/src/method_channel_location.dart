@@ -64,7 +64,7 @@ class MethodChannelLocation extends LocationPlatform {
   /// Returns a [LocationData] object.
   @override
   Future<LocationData> getLocation() async {
-    final Map<String, double> resultMap =
+    final Map<String, dynamic> resultMap =
         await _methodChannel.invokeMapMethod('getLocation');
     return LocationData.fromMap(resultMap);
   }
